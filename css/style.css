@@ -1,6 +1,120 @@
+<<<<<<< HEAD
+
+
+
+table,tr,th,td {
+=======
 table,tr,th,td {
 
+>>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
     border: 1px solid black;
     border-collapse: collapse;
     }
 
+<<<<<<< HEAD
+    
+    *{
+        box-sizing:border-box;
+        
+        }
+        
+        
+        header{
+        
+          margin-right: 50px;
+          margin-left: 50px;
+          background-color:rgb(160, 147, 125);
+          font-family: 'Times New Roman', Times, serif;
+         
+        
+        }
+
+        h1{
+
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        body{
+
+
+            background-color: rgb(231, 212, 181);
+        }
+    nav{
+
+        position: relative;
+    }
+
+        nav a {
+
+            display: inline-block;
+            padding:20px;
+            font-size: large;
+            position:absolute; 
+            bottom: 30px;
+            left: 300px; 
+            text-decoration: none;
+            color:honeydew;
+            font-size: larger;
+        }
+
+        div{
+
+            margin-left: 50px;
+            font-size: medium;
+            font-family:cursive;
+            display: inline-block;
+            border: black;
+            border-color: black;
+            position: relative;
+        }
+#right{
+    float: right;
+    padding-top: 60px;
+    margin-right: 80px;
+}
+        
+
+#right2{
+   float: right; 
+   position: absolute;
+   left: 1150px;
+   padding-top: 30px;
+   bottom: 350px;
+   top:700px;
+   margin-right: 100px;
+} 
+img{
+    height: 200px;
+    width: 400px;
+}
+
+#middle{
+    padding: 50px;
+    margin-right: 120px;
+    padding-right: 50px;
+}
+
+h2,p{
+
+    color: rgb(93, 83, 74);
+}
+
+
+section{
+    padding-right: 100px;
+    margin-left: 400px;
+}
+section h2{
+    font-size: xx-large;
+    text-align: center;
+    padding-right: 400px;
+}
+
+footer{
+    
+    background-color: rgb(214, 210, 196);
+    height: 50px;
+}
+=======
+>>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
