@@ -1,10 +1,12 @@
+
+
+
 table,tr,th,td {
-<<<<<<< HEAD
     border: 1px solid black;
     border-collapse: collapse;
     }
 
-
+    
     *{
         box-sizing:border-box;
         
@@ -108,9 +110,3 @@ footer{
     background-color: rgb(214, 210, 196);
     height: 50px;
 }
-=======
-border: 1px solid black;
-border-collapse: collapse;
-}
-
->>>>>>> 768cfb0b925cea11a26d8da9d18ec05d28fdfa8e

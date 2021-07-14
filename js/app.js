@@ -11,7 +11,6 @@ function Shops(name, min, max, avg,) {
     this.hourlyCust = [];
     this.avCOKKIESHOUR = [];
     this.totalsOfcook = 0;
-    // this.image=img;
     shops.push(this);
 }
 
@@ -56,10 +55,6 @@ console.log(tableElement);
 let headRow = function () {
 
 
-<<<<<<< HEAD
-=======
-    console.log('hi')
->>>>>>> 768cfb0b925cea11a26d8da9d18ec05d28fdfa8e
 
     let rawsElement = document.createElement('tr');
     tableElement.appendChild(rawsElement);
@@ -165,7 +160,6 @@ function toDo(event) {
     let min = event.target.minCustomer.value;
     let avg = event.target.avergeOfcustomer.value;
     let newLocation = new Shops(location, min, max, avg)
-<<<<<<< HEAD
     console.log(newLocation);
 
     tableElement.removeChild(tableElement.lastElementChild);
@@ -174,40 +168,5 @@ function toDo(event) {
     shops[5].render();
     footerRow();
 
-
-
-
 }
 
-=======
-
-
-
-    parent.textContent = ''
-    // headRow();
-    // newLocation.randomCust();
-    // newLocation.avOfcookies();
-    // // newLocation.totalsOfcook();
-    // newLocation.render();
-
-    // footerRow();
-
-
-    headRow();
-
-    for (let i = 0; i < shops.length; i++) {
-        shops[i].randomCust();
-        shops[i].avOfcookies();
-        shops[i].render();
-    }
-    
-    footerRow();
-
-    // // for(let i=0;i<shops.length;i++){
-    // //     shops[i].randomCust();
-    // //     shops[i].avOfcookies();
-    // //     shops[i].render();
-    // //     }
-
-}
->>>>>>> 768cfb0b925cea11a26d8da9d18ec05d28fdfa8e
