@@ -2,16 +2,15 @@
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm']
 let shops = []
-let totals = 0;
-let coHours = []
-function Shops(name, min, max, avg) {
+
+function Shops(name, min, max, avg,) {
     this.name = name;
     this.minOfcust = min;
     this.maxOfcust = max;
     this.avgOfcust = avg;
     this.hourlyCust = [];
     this.avCOKKIESHOUR = [];
-    // this.totals=0
+    this.totalsOfcook=0;
     shops.push(this);
 }
 
@@ -36,11 +35,11 @@ Shops.prototype.randomCust = function () {
 
 Shops.prototype.avOfcookies = function () {
 
-    for (let i = 0; i < hours.length; i++)
-        // this.avCOKKIESHOUR[i] = Math.floor(this.hourlyCust[i] * this.avgOfcust)
+    for (let i = 0; i < hours.length; i++){
+
         this.avCOKKIESHOUR.push(Math.floor(this.hourlyCust[i] * this.avgOfcust))
-    console.log(this.avCOKKIESHOUR, 'hi')
-    coHours.push(this.avCOKKIESHOUR)
+   
+        this.totalsOfcook+= this.avCOKKIESHOUR[i];}
 }
 
 
@@ -75,7 +74,8 @@ let headRow = function () {
     headElement.textContent = `Daily Location Total`;
 }
 
-location1.render1 = function () {
+
+Shops.prototype.render= function(){
 
     let rawsElement2 = document.createElement('tr');
     tableElement.appendChild(rawsElement2);
@@ -97,115 +97,9 @@ location1.render1 = function () {
 
     let finalElement2 = document.createElement('th');
     rawsElement2.appendChild(finalElement2);
-
+    finalElement2.textContent=`${this.totalsOfcook}`
 }
 
-location2.render2 = function () {
-
-    // for (let i = 0; i < shops.length; i++) {
-
-
-    let rawsElement2 = document.createElement('tr');
-    tableElement.appendChild(rawsElement2);
-
-    // for (let j = 0; j <= hours.length; j++) {
-    let dataOfnames = document.createElement('td')
-    rawsElement2.appendChild(dataOfnames);
-    dataOfnames.textContent = `${this.name}`
-
-
-    for (let j = 0; j < hours.length; j++) {
-        let dataOfhours = document.createElement('td')
-        rawsElement2.appendChild(dataOfhours);
-        dataOfhours.textContent = `${this.avCOKKIESHOUR[j]}`
-
-
-        // }
-    }
-    let finalElement2 = document.createElement('th');
-    rawsElement2.appendChild(finalElement2);
-}
-
-location3.render3 = function () {
-
-    // for (let i = 0; i < shops.length; i++) {
-   
-
-    let rawsElement2 = document.createElement('tr');
-    tableElement.appendChild(rawsElement2);
-
-    // for (let j = 0; j <= hours.length; j++) {
-   
-    let dataOfnames = document.createElement('td')
-    rawsElement2.appendChild(dataOfnames);
-    dataOfnames.textContent = `${this.name}`
-
-
-    for (let j = 0; j < hours.length; j++) {
-        let dataOfhours = document.createElement('td')
-        rawsElement2.appendChild(dataOfhours);
-        dataOfhours.textContent = `${this.avCOKKIESHOUR[j]}`
-
-
-        // }
-    }
-    let finalElement2 = document.createElement('th');
-    rawsElement2.appendChild(finalElement2);
-}
-
-location4.render4 = function () {
-
-    // for (let i = 0; i < shops.length; i++) {
-
-    let rawsElement2 = document.createElement('tr');
-    tableElement.appendChild(rawsElement2);
-
-    // for (let j = 0; j <= hours.length; j++) {
-    
-
-    let dataOfnames = document.createElement('td')
-    rawsElement2.appendChild(dataOfnames);
-    dataOfnames.textContent = `${this.name}`
-
-
-    for (let j = 0; j < hours.length; j++) {
-        let dataOfhours = document.createElement('td')
-        rawsElement2.appendChild(dataOfhours);
-        dataOfhours.textContent = `${this.avCOKKIESHOUR[j]}`
-
-
-        // }
-    }
-    let finalElement2 = document.createElement('th');
-    rawsElement2.appendChild(finalElement2);
-}
-
-location5.render5 = function () {
-
-    // for (let i = 0; i < shops.length; i++) {
-
-
-    let rawsElement2 = document.createElement('tr');
-    tableElement.appendChild(rawsElement2);
-
-    // for (let j = 0; j <= hours.length; j++) {
-
-    let dataOfnames = document.createElement('td')
-    rawsElement2.appendChild(dataOfnames);
-    dataOfnames.textContent = `${this.name}`
-
-
-    for (let j = 0; j < hours.length; j++) {
-        let dataOfhours = document.createElement('td')
-        rawsElement2.appendChild(dataOfhours);
-        dataOfhours.textContent = `${this.avCOKKIESHOUR[j]}`
-
-
-        // }
-    }
-    let finalElement2 = document.createElement('th');
-    rawsElement2.appendChild(finalElement2);
-}
 
 let footerRow = function () {
 
@@ -218,7 +112,7 @@ let footerRow = function () {
     rawsElement.appendChild(headElement2);
     headElement2.textContent = `totals`;
 
-          let totoOftot=0;
+let totalOftotal=0;
     for (let i = 0; i < hours.length; i++) {
         let totals=0;
     
@@ -226,8 +120,7 @@ let footerRow = function () {
         for (let j = 0; j < shops.length; j++) {
         totals+= shops[j].avCOKKIESHOUR[i]; 
         
-        totoOftot+=shops[j].avCOKKIESHOUR[i];   
-        console.log(totoOftot)
+        totalOftotal+=shops[j].avCOKKIESHOUR[i];   
     
         }
 
@@ -237,32 +130,18 @@ let footerRow = function () {
     }
     let headElement = document.createElement('th');
     rawsElement.appendChild(headElement);
-    headElement.textContent = `${totoOftot}`;  
+    headElement.textContent = `${totalOftotal}`;  
 
 }
+
+headRow();
+
 for(let i=0;i<shops.length;i++){
 shops[i].randomCust();
 shops[i].avOfcookies();
+shops[i].render();
 }
   
-    headRow();
 
-    location1.render1();
-
-
-   
-    location2.render2();
-
-    
-    location3.render3();
-
-    // location4.randomCust();
-    // location4.avOfcookies();
-    location4.render4();
-
-    // location5.randomCust();
-    // location5.avOfcookies();
-    location5.render5();
-
-    footerRow();
+footerRow();
 
