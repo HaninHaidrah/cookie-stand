@@ -10,7 +10,8 @@ function Shops(name, min, max, avg,) {
     this.avgOfcust = avg;
     this.hourlyCust = [];
     this.avCOKKIESHOUR = [];
-    this.totalsOfcook=0;
+    this.totalsOfcook = 0;
+    // this.image=img;
     shops.push(this);
 }
 
@@ -35,11 +36,12 @@ Shops.prototype.randomCust = function () {
 
 Shops.prototype.avOfcookies = function () {
 
-    for (let i = 0; i < hours.length; i++){
+    for (let i = 0; i < hours.length; i++) {
 
         this.avCOKKIESHOUR.push(Math.floor(this.hourlyCust[i] * this.avgOfcust))
-   
-        this.totalsOfcook+= this.avCOKKIESHOUR[i];}
+
+        this.totalsOfcook += this.avCOKKIESHOUR[i];
+    }
 }
 
 
@@ -52,6 +54,10 @@ console.log(tableElement);
 
 
 let headRow = function () {
+
+
+    console.log('hi')
+
     let rawsElement = document.createElement('tr');
     tableElement.appendChild(rawsElement);
 
@@ -75,7 +81,7 @@ let headRow = function () {
 }
 
 
-Shops.prototype.render= function(){
+Shops.prototype.render = function () {
 
     let rawsElement2 = document.createElement('tr');
     tableElement.appendChild(rawsElement2);
@@ -97,7 +103,7 @@ Shops.prototype.render= function(){
 
     let finalElement2 = document.createElement('th');
     rawsElement2.appendChild(finalElement2);
-    finalElement2.textContent=`${this.totalsOfcook}`
+    finalElement2.textContent = `${this.totalsOfcook}`
 }
 
 
@@ -112,35 +118,77 @@ let footerRow = function () {
     rawsElement.appendChild(headElement2);
     headElement2.textContent = `totals`;
 
-let totalOftotal=0;
+    let totalOftotal = 0;
     for (let i = 0; i < hours.length; i++) {
-        let totals=0;
-    
-        
+        let totals = 0;
+
+
         for (let j = 0; j < shops.length; j++) {
-        totals+= shops[j].avCOKKIESHOUR[i]; 
-        
-        totalOftotal+=shops[j].avCOKKIESHOUR[i];   
-    
+            totals += shops[j].avCOKKIESHOUR[i];
+
+            totalOftotal += shops[j].avCOKKIESHOUR[i];
+
         }
 
         let headElement = document.createElement('th');
         rawsElement.appendChild(headElement);
-        headElement.textContent = `${totals}`;  
+        headElement.textContent = `${totals}`;
     }
     let headElement = document.createElement('th');
     rawsElement.appendChild(headElement);
-    headElement.textContent = `${totalOftotal}`;  
+    headElement.textContent = `${totalOftotal}`;
 
 }
 
 headRow();
 
-for(let i=0;i<shops.length;i++){
-shops[i].randomCust();
-shops[i].avOfcookies();
-shops[i].render();
+for (let i = 0; i < shops.length; i++) {
+    shops[i].randomCust();
+    shops[i].avOfcookies();
+    shops[i].render();
 }
-  
+
 footerRow();
 
+
+let form = document.getElementById('form');
+form.addEventListener('submit', toDo)
+
+
+function toDo(event) {
+    event.preventDefault();
+    let location = event.target.locationName.value;
+    let max = event.target.maxCustomer.value;
+    let min = event.target.minCustomer.value;
+    let avg = event.target.avergeOfcustomer.value;
+    let newLocation = new Shops(location, min, max, avg)
+
+
+
+    parent.textContent = ''
+    // headRow();
+    // newLocation.randomCust();
+    // newLocation.avOfcookies();
+    // // newLocation.totalsOfcook();
+    // newLocation.render();
+
+    // footerRow();
+
+
+    headRow();
+
+    for (let i = 0; i < shops.length; i++) {
+        shops[i].randomCust();
+        shops[i].avOfcookies();
+        shops[i].render();
+    }
+    
+    footerRow();
+
+    // // for(let i=0;i<shops.length;i++){
+    // //     shops[i].randomCust();
+    // //     shops[i].avOfcookies();
+    // //     shops[i].render();
+    // //     }
+
+}
