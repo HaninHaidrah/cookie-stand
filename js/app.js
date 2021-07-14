@@ -57,6 +57,7 @@ let headRow = function () {
 
 
 
+
     let rawsElement = document.createElement('tr');
     tableElement.appendChild(rawsElement);
 
@@ -161,6 +162,7 @@ function toDo(event) {
     let min = event.target.minCustomer.value;
     let avg = event.target.avergeOfcustomer.value;
     let newLocation = new Shops(location, min, max, avg)
+
     console.log(newLocation);
 
     tableElement.removeChild(tableElement.lastElementChild);
@@ -173,4 +175,5 @@ function toDo(event) {
 
 
 }
+
 
