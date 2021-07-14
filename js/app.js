@@ -158,7 +158,6 @@ function toDo(event) {
     let min = event.target.minCustomer.value;
     let avg = event.target.avergeOfcustomer.value;
     let newLocation = new Shops(location, min, max, avg)
-
     console.log(newLocation);
 
     tableElement.removeChild(tableElement.lastElementChild);

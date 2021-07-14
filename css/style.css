@@ -1,13 +1,9 @@
 
 
-
-
-
 table,tr,th,td {
     border: 1px solid black;
     border-collapse: collapse;
     }
-
 
     
     *{
@@ -113,3 +109,4 @@ footer{
     background-color: rgb(214, 210, 196);
     height: 50px;
 }
+
