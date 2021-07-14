@@ -142,6 +142,5 @@ shops[i].avOfcookies();
 shops[i].render();
 }
   
-
 footerRow();
 
