@@ -56,7 +56,7 @@ console.log(tableElement);
 let headRow = function () {
 
 
-    console.log('hi')
+
 
     let rawsElement = document.createElement('tr');
     tableElement.appendChild(rawsElement);
@@ -163,32 +163,17 @@ function toDo(event) {
     let avg = event.target.avergeOfcustomer.value;
     let newLocation = new Shops(location, min, max, avg)
 
+    console.log(newLocation);
 
-
-    parent.textContent = ''
-    // headRow();
-    // newLocation.randomCust();
-    // newLocation.avOfcookies();
-    // // newLocation.totalsOfcook();
-    // newLocation.render();
-
-    // footerRow();
-
-
-    headRow();
-
-    for (let i = 0; i < shops.length; i++) {
-        shops[i].randomCust();
-        shops[i].avOfcookies();
-        shops[i].render();
-    }
-    
+    tableElement.removeChild(tableElement.lastElementChild);
+    shops[5].randomCust();
+    shops[5].avOfcookies();
+    shops[5].render();
     footerRow();
 
-    // // for(let i=0;i<shops.length;i++){
-    // //     shops[i].randomCust();
-    // //     shops[i].avOfcookies();
-    // //     shops[i].render();
-    // //     }
+
+
 
 }
+
+
