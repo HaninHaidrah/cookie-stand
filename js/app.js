@@ -55,6 +55,10 @@ console.log(tableElement);
 let headRow = function () {
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
 
     let rawsElement = document.createElement('tr');
     tableElement.appendChild(rawsElement);
@@ -160,6 +164,10 @@ function toDo(event) {
     let min = event.target.minCustomer.value;
     let avg = event.target.avergeOfcustomer.value;
     let newLocation = new Shops(location, min, max, avg)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
     console.log(newLocation);
 
     tableElement.removeChild(tableElement.lastElementChild);
@@ -170,3 +178,7 @@ function toDo(event) {
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
