@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-
-
 
 table,tr,th,td {
-=======
-table,tr,th,td {
 
->>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
     border: 1px solid black;
     border-collapse: collapse;
     }
 
-<<<<<<< HEAD
     
     *{
         box-sizing:border-box;
@@ -116,5 +109,4 @@ footer{
     background-color: rgb(214, 210, 196);
     height: 50px;
 }
-=======
->>>>>>> 1c6ce43b84c349ef1a4406f2395cac3ce36ebb91
+
