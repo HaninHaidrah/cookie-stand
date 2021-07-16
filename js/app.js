@@ -154,16 +154,23 @@ form.addEventListener('submit', toDo)
 function toDo(event) {
     event.preventDefault();
     let location = event.target.locationName.value;
-    let max = event.target.maxCustomer.value;
-    let min = event.target.minCustomer.value;
-    let avg = event.target.avergeOfcustomer.value;
+    let max = event.target.maxCustomer.valueAsNumber;
+    let min = event.target.minCustomer.valueAsNumber;
+    let avg = event.target.avergeOfcustomer.valueAsNumber;
     let newLocation = new Shops(location, min, max, avg)
     console.log(newLocation);
 
-    tableElement.removeChild(tableElement.lastElementChild);
-    shops[5].randomCust();
-    shops[5].avOfcookies();
-    shops[5].render();
+    tableElement.textContent = ``
+
+
+    headRow();
+
+    for (let i = 0; i < shops.length; i++) {
+        shops[i].randomCust();
+        shops[i].avOfcookies();
+        shops[i].render();
+    }
+
     footerRow();
 
 }
