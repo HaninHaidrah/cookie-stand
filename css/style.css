@@ -16,97 +16,215 @@ table,tr,th,td {
         
           margin-right: 50px;
           margin-left: 50px;
-          background-color:rgb(160, 147, 125);
+          /* background-color:rgb(160, 147, 125); */
           font-family: 'Times New Roman', Times, serif;
-         
-        
-        }
-
-        h1{
-
-            padding: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        body{
-
-
-            background-color: rgb(231, 212, 181);
-        }
-    nav{
-
-        position: relative;
-    }
-
-        nav a {
-
-            display: inline-block;
-            padding:20px;
-            font-size: large;
-            position:absolute; 
-            bottom: 30px;
-            left: 300px; 
-            text-decoration: none;
-            color:honeydew;
-            font-size: larger;
-        }
-
-        div{
-
-            margin-left: 50px;
-            font-size: medium;
-            font-family:cursive;
-            display: inline-block;
-            border: black;
-            border-color: black;
-            position: relative;
-        }
-#right{
-    float: right;
-    padding-top: 60px;
-    margin-right: 80px;
-}
-        
-
-#right2{
-   float: right; 
-   position: absolute;
-   left: 1150px;
-   padding-top: 30px;
-   bottom: 350px;
-   top:700px;
-   margin-right: 100px;
-} 
-img{
-    height: 200px;
-    width: 400px;
-}
-
-#middle{
-    padding: 50px;
-    margin-right: 120px;
-    padding-right: 50px;
-}
-
-h2,p{
-
-    color: rgb(93, 83, 74);
-}
-
-
-section{
-    padding-right: 100px;
-    margin-left: 400px;
-}
-section h2{
-    font-size: xx-large;
-    text-align: center;
-    padding-right: 400px;
-}
-
-footer{
+         height: 200px;;
     
-    background-color: rgb(214, 210, 196);
-    height: 50px;
+        }
+
+
+ 
+
+
+
+
+ #div1{
+padding: 20px;
+float: left;
+margin: 20px;
+background-color: cornsilk;
+width: 100%;
+position: relative;
+}
+ #div1 span ul li{
+display: inline-block;
+margin-left: 60px;
+position: relative;
+ }
+
+ #div1 img{
+
+    position: absolute;
+    top: 34%;
+    bottom: 5%;
+    right: 93%;
+ }
+#div2{
+
+    background-color: darkgreen;
+    padding: 20px;
+float: left;
+margin: 20px;
+width: 100%;
+position: relative;
+
+}
+#div2 span ul li{
+    display:inline-block;
+    margin: 0;
+    margin-left: 250px;
+    color: whitesmoke;
+}
+
+#div2 a{
+
+    color:rgb(5, 5, 5);
+    position: absolute;
+    bottom: 170%;
+    left: 87%;
+    font-size: xx-large;
+    text-decoration: none;
+}
+#div2 img{
+
+    position: absolute;
+    top: 0%;
+    bottom: 10%;
+    left: 4%;
+    right: 10%;
+  }  
+
+  body{
+      background-color: rgb(235, 247, 247);
+  }
+  #firstdiv{
+      position: relative;
+  }
+  
+  #firstdiv img{
+      
+    
+    /* position: absolute;
+    right: 50%;
+    left: 55%;
+    bottom: 20%; */
+    height: 140%;
+    width: 30%;
+    top:71%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+  }
+
+
+  
+
+  main div h2{
+
+    position: absolute;
+    top: 40%;
+    bottom: 5%;
+    left: 45%;
+    right: 5%;
+    color: darkgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+main div h2{
+    font-size: 200%;
+}
+ main div p {
+     position: absolute;
+     top: 50%;
+     right: 35%;
+     font-family: monospace;
+     font-size: 20px;
+ }
+
+
+
+
+ #firstdiv1{
+    position: relative;
+}
+
+#firstdiv1 img{
+    
+  
+  /* position: absolute;
+  right: 50%;
+  left: 55%;
+  bottom: 20%; */
+  height: 140%;
+  width: 30%;
+  top:71%;
+  margin-left: 10%;
+  margin-top: 5%;
+  
+}
+
+
+
+
+main #seconddiv h2{
+
+  position: absolute;
+  top: 80%;
+  bottom: 5%;
+  left: 40%;
+  right: 5%;
+  color: darkgreen;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+main div h2{
+  font-size: 200%;
+}
+main #seconddiv p {
+   position: absolute;
+   top: 90%;
+   right: 35%;
+   font-family: monospace;
+   font-size: 20px;
+}
+
+
+
+
+
+
+
+#firstdiv2{
+    position: relative;
+}
+
+#firstdiv2 img{
+  height:300px;
+  width: 500px;
+  top:46%;
+  margin-left: 70%;
+  margin-top: 18%;
+  
+}
+
+
+
+
+main #thirddiv h2{
+
+  position: absolute;
+  top: 140%;
+  bottom: 5%;
+  left: 35%;
+  right: 0%;
+  color: darkgreen;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+main div h2{
+  font-size: 200%;
+}
+main #thirddiv p {
+   position: absolute;
+   top: 130%;
+   right: 70%;
+   font-family: monospace;
+   font-size: 20px;
+   background-color: darkgreen;
+   color: whitesmoke;
+   padding: 5%;
 }
 

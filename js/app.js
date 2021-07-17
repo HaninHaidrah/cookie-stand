@@ -160,7 +160,10 @@ function toDo(event) {
     let newLocation = new Shops(location, min, max, avg)
     console.log(newLocation);
 
-    tableElement.textContent = ``
+    tableElement.textContent = 
+    `Loacation in the South of the city
+    Hours open:from 6am to 7 pm
+    contact information:Phone numbers:07973962145`
 
 
     headRow();
@@ -175,3 +178,13 @@ function toDo(event) {
 
 }
 
+// let form2=document.getElementById('form2')
+// form2.addEventListener('mouseover',doThis)
+// function doThis(){
+//     let paragraph=document.createElement('p')
+//     paragraph.textContent=`hello`
+// }
+
+
+
+}
