@@ -162,7 +162,7 @@ main #seconddiv h2{
   position: absolute;
   top: 80%;
   bottom: 5%;
-  left: 40%;
+  left: 45%;
   right: 5%;
   color: darkgreen;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -183,7 +183,9 @@ main #seconddiv p {
 
 
 
-
+main section{
+  position: relative;
+}
 
 
 #firstdiv2{
@@ -193,10 +195,11 @@ main #seconddiv p {
 #firstdiv2 img{
   height:300px;
   width: 500px;
-  top:46%;
+  top:10%;
+  bottom: 70%;
   margin-left: 70%;
-  margin-top: 18%;
-  
+  margin-top: 10%;
+  float: right;
 }
 
 
@@ -205,7 +208,7 @@ main #seconddiv p {
 main #thirddiv h2{
 
   position: absolute;
-  top: 140%;
+  top: 120%;
   bottom: 5%;
   left: 35%;
   right: 0%;
@@ -219,7 +222,7 @@ main div h2{
 }
 main #thirddiv p {
    position: absolute;
-   top: 130%;
+   top: 150%;
    right: 70%;
    font-family: monospace;
    font-size: 20px;
@@ -228,3 +231,17 @@ main #thirddiv p {
    padding: 5%;
 }
 
+#sec2{
+position: relative;
+background-color: burlywood;
+margin:3%;
+
+}
+
+#firstdiv3{
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  left: 60%;
+  bottom: 40%;
+}

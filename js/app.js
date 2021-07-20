@@ -160,10 +160,8 @@ function toDo(event) {
     let newLocation = new Shops(location, min, max, avg)
     console.log(newLocation);
 
-    tableElement.textContent = 
-    `Loacation in the South of the city
-    Hours open:from 6am to 7 pm
-    contact information:Phone numbers:07973962145`
+    tableElement.textContent = ''
+   
 
 
     headRow();
@@ -187,4 +185,3 @@ function toDo(event) {
 
 
 
-}
