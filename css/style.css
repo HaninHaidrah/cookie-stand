@@ -3,32 +3,25 @@
 table,tr,th,td {
     border: 1px solid black;
     border-collapse: collapse;
-    }
+}
 
     
-    *{
-        box-sizing:border-box;
+*{
+     box-sizing:border-box;
         
-        }
+}
         
         
-        header{
+header{
         
-          margin-right: 50px;
-          margin-left: 50px;
-          /* background-color:rgb(160, 147, 125); */
-          font-family: 'Times New Roman', Times, serif;
-         height: 200px;;
+  margin-right: 50px;
+  margin-left: 50px;
+ font-family: 'Times New Roman', Times, serif;
+ height: 200px;
     
-        }
+}
 
-
- 
-
-
-
-
- #div1{
+#div1{
 padding: 20px;
 float: left;
 margin: 20px;
@@ -36,29 +29,32 @@ background-color: cornsilk;
 width: 100%;
 position: relative;
 }
- #div1 span ul li{
+
+#div1 span ul li{
 display: inline-block;
 margin-left: 60px;
 position: relative;
- }
+}
 
- #div1 img{
+#div1 img{
 
     position: absolute;
     top: 34%;
     bottom: 5%;
     right: 93%;
- }
+}
+
 #div2{
 
-    background-color: darkgreen;
-    padding: 20px;
+background-color: darkgreen;
+padding: 20px;
 float: left;
 margin: 20px;
 width: 100%;
 position: relative;
 
 }
+
 #div2 span ul li{
     display:inline-block;
     margin: 0;
@@ -85,19 +81,14 @@ position: relative;
   }  
 
   body{
-      background-color: rgb(235, 247, 247);
+      background-color: rgb(247, 252, 252);
   }
   #firstdiv{
       position: relative;
   }
   
   #firstdiv img{
-      
     
-    /* position: absolute;
-    right: 50%;
-    left: 55%;
-    bottom: 20%; */
     height: 140%;
     width: 30%;
     top:71%;
@@ -140,12 +131,7 @@ main div h2{
 }
 
 #firstdiv1 img{
-    
   
-  /* position: absolute;
-  right: 50%;
-  left: 55%;
-  bottom: 20%; */
   height: 140%;
   width: 30%;
   top:71%;
@@ -183,37 +169,35 @@ main #seconddiv p {
 
 
 
-main section{
+ main section{
   position: relative;
+  background-color: cadetblue;
+  padding: 10%;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
 #firstdiv2{
-    position: relative;
+    position: absolute;
+    top: 5%;
+    bottom: 70%;
+    left: 70%;
+    margin-bottom: 5%;
+
 }
-
-#firstdiv2 img{
-  height:300px;
-  width: 500px;
-  top:10%;
-  bottom: 70%;
-  margin-left: 70%;
-  margin-top: 10%;
-  float: right;
-}
-
-
-
 
 main #thirddiv h2{
 
   position: absolute;
-  top: 120%;
-  bottom: 5%;
+  top: 10%;
+  bottom: 50%;
   left: 35%;
   right: 0%;
-  color: darkgreen;
+  color: rgb(1, 24, 1);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 
@@ -222,26 +206,108 @@ main div h2{
 }
 main #thirddiv p {
    position: absolute;
-   top: 150%;
-   right: 70%;
+   top: 40%;
+   left: 35%;
    font-family: monospace;
    font-size: 20px;
-   background-color: darkgreen;
+   /* background-color: rgb(165, 189, 165); */
    color: whitesmoke;
-   padding: 5%;
-}
-
-#sec2{
-position: relative;
-background-color: burlywood;
-margin:3%;
+   /* padding: 5%; */
 
 }
 
-#firstdiv3{
+button{
+  background-color: chocolate;
+  border: none;
+  color: cornsilk;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+
+main #sec2{
+  position: relative;
+  background-color: rgb(248, 234, 229);
+}
+
+#right{
+
+  float: right;
+
+}
+#right img{
+
+  padding: 10px;
+  
+}
+
+#right p{
+  top: 105%;
+  right: 8%;
+  color:rgb(100, 43, 2);
+  /* background-color:cornsilk; */
+  padding: 2%;
+  margin-top: 0%;
+}
+main #right h2{
+
   position: absolute;
-  right: 30%;
-  top: 30%;
-  left: 60%;
-  bottom: 40%;
+  bottom: 90%;
+  top: 5%;
+  right: 15%;
+  left: 5%;
+  color:rgb(16, 16, 17);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+#left{
+
+  float: left;
+}
+
+#left img{
+
+  padding: 10px;
+  width: 276px;
+  height: 175px;
+}
+
+#left p{
+  top: 105%;
+  left: 8%;
+  color:rgb(100, 43, 2);
+  /* background-color:cornsilk; */
+  padding: 2%;
+  margin-top: 0%;
+  
+}
+main #left h2{
+
+  position: absolute;
+  bottom: 90%;
+  top: 5%;
+  left: 65%;
+  right: 5%;
+  color:rgb(16, 16, 17);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer{
+  margin-right: 50px;
+  margin-left: 50px;
+ font-family: 'Times New Roman', Times, serif;
+ height: 100px;
+    
+}
+footer #div3 span ul li{
+  display:inline-block;
+  /* margin-left: 250px; */
+  color: whitesmoke;
 }
