@@ -242,7 +242,7 @@ main #sec2{
 }
 #right img{
 
-  padding: 10px;
+  padding: 30px;
   
 }
 
@@ -274,7 +274,7 @@ main #right h2{
 
 #left img{
 
-  padding: 10px;
+  padding-bottom: 30px;
   width: 276px;
   height: 175px;
 }
@@ -300,14 +300,36 @@ main #left h2{
 }
 
 footer{
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
  font-family: 'Times New Roman', Times, serif;
  height: 100px;
-    
+  margin-top: 20%;
 }
+
+#div3{
+
+  background-color: chocolate;
+  padding: 20px;
+  float: left;
+  margin: 20px;
+  width: 100%;
+  position: relative;
+  
+  }
 footer #div3 span ul li{
   display:inline-block;
-  /* margin-left: 250px; */
-  color: whitesmoke;
+  margin-left: 250px;
+  color: rgb(9, 31, 2);
+  font-size: 20px;
+  font-family: cursive;
 }
+
+#div3 img{
+
+  position: absolute;
+  top: 0%;
+  bottom: 10%;
+  left: 4%;
+  right: 10%;
+}  
