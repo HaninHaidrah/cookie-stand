@@ -97,7 +97,7 @@ Shops.prototype.render = function () {
 
     }
 
-    let finalElement2 = document.createElement('th');
+    let finalElement2 = document.createElement('td');
     rawsElement2.appendChild(finalElement2);
     finalElement2.textContent = `${this.totalsOfcook}`
 }
@@ -110,9 +110,9 @@ let footerRow = function () {
     tableElement.appendChild(rawsElement);
 
 
-    let headElement2 = document.createElement('th');
+    let headElement2 = document.createElement('td');
     rawsElement.appendChild(headElement2);
-    headElement2.textContent = `totals`;
+    headElement2.textContent = `Totals`;
 
     let totalOftotal = 0;
     for (let i = 0; i < hours.length; i++) {
@@ -126,11 +126,11 @@ let footerRow = function () {
 
         }
 
-        let headElement = document.createElement('th');
+        let headElement = document.createElement('td');
         rawsElement.appendChild(headElement);
         headElement.textContent = `${totals}`;
     }
-    let headElement = document.createElement('th');
+    let headElement = document.createElement('td');
     rawsElement.appendChild(headElement);
     headElement.textContent = `${totalOftotal}`;
 
